@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">YUNA KIM</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">연락하기</button>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <span class="hero-tag">UI/UX · Brand · Visual Design</span>
+      <h1>좋은 디자인은<br><em>경험을 바꿉니다.</em></h1>
+      <p>브랜드의 본질을 시각적으로 구현합니다. 사용자 중심의 디자인으로 의미 있는 경험을 만들어냅니다.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">작업물 보기</button>
+        <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">협업 문의</button>
+      </div>
+      <div class="scroll-hint">
+        <span>↓</span> SCROLL
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <svg viewBox="0 0 380 450" fill="none" xmlns="http://www.w3.org/2000/svg"
+           stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+
+        <!-- 컬러 스와치 (상단 오른쪽) -->
+        <circle cx="282" cy="44" r="20" fill="#c9c5be" stroke-width="2"/>
+        <circle cx="316" cy="44" r="20" fill="#b5bdc5" stroke-width="2"/>
+        <circle cx="299" cy="67" r="20" fill="#c5b8b2" stroke-width="2"/>
+
+        <!-- 별 (스와치 옆) -->
+        <path d="M350 83 L353 75 L356 83 L364 86 L356 89 L353 97 L350 89 L342 86 Z" stroke-width="1.5"/>
+
+        <!-- 연필 (상단 왼쪽, 회전) -->
+        <g transform="translate(46,142) rotate(-38)">
+          <rect x="-8" y="-52" width="16" height="68" rx="2" fill="#fff" stroke-width="2"/>
+          <path d="M-8 16 L0 30 L8 16" fill="#fff" stroke-width="2"/>
+          <rect x="-8" y="-63" width="16" height="12" rx="1" fill="#fff" stroke-width="2"/>
+          <line x1="-8" y1="-44" x2="8" y2="-44" stroke-width="1.5"/>
+          <line x1="-8" y1="8" x2="8" y2="8" stroke-width="1.5"/>
+        </g>
+
+        <!-- 작은 별 (왼쪽 중간) -->
+        <path d="M50 212 L52 206 L54 212 L60 214 L54 216 L52 222 L50 216 L44 214 Z" stroke-width="1.5"/>
+
+        <!-- 삼각형 (오른쪽) -->
+        <path d="M330 163 L352 126 L374 163 Z" stroke-width="2"/>
+
+        <!-- 점선 원 (왼쪽 아래) -->
+        <circle cx="36" cy="296" r="22" stroke-width="2" stroke-dasharray="5 4"/>
+
+        <!-- 회전 사각형 (오른쪽 아래) -->
+        <rect x="320" y="296" width="28" height="28" rx="4" stroke-width="2" transform="rotate(14,334,310)"/>
+
+        <!-- 플러스 기호 (오른쪽 중간) -->
+        <line x1="354" y1="234" x2="354" y2="250" stroke-width="2.5"/>
+        <line x1="346" y1="242" x2="362" y2="242" stroke-width="2.5"/>
+
+        <!-- 물결 장식선 (하단) -->
+        <path d="M44 430 Q56 422 68 430 Q80 438 92 430 Q104 422 116 430 Q128 438 140 430" stroke="#ccc" stroke-width="2"/>
+
+        <!-- 머리카락 (헤드 뒤에 먼저 그림) -->
+        <path d="M146 188 Q143 124 167 106 Q183 95 200 94 Q221 95 237 111 Q251 129 249 180" fill="#222" stroke="none"/>
+        <circle cx="227" cy="103" r="19" fill="#222" stroke="none"/>
+
+        <!-- 머리 (얼굴, 흰 배경) -->
+        <ellipse cx="191" cy="176" rx="44" ry="48" fill="#fff" stroke="#111" stroke-width="2.5"/>
+
+        <!-- 귀 -->
+        <ellipse cx="147" cy="178" rx="9" ry="11" fill="#fff" stroke="#111" stroke-width="2"/>
+        <ellipse cx="235" cy="178" rx="9" ry="11" fill="#fff" stroke="#111" stroke-width="2"/>
+
+        <!-- 머리카락 외곽선 -->
+        <path d="M147 180 Q149 118 191 106 Q233 118 235 180" stroke="#111" stroke-width="2.5" fill="none"/>
+        <circle cx="227" cy="103" r="19" fill="none" stroke="#111" stroke-width="2"/>
+        <path d="M213 110 Q223 102 233 107" stroke="#111" stroke-width="1.5" fill="none"/>
+
+        <!-- 눈 (큰 검은 눈) -->
+        <ellipse cx="176" cy="177" rx="8" ry="9" fill="#111" stroke="none"/>
+        <ellipse cx="178" cy="173" rx="2.5" ry="3" fill="#fff" stroke="none"/>
+        <ellipse cx="206" cy="177" rx="8" ry="9" fill="#111" stroke="none"/>
+        <ellipse cx="208" cy="173" rx="2.5" ry="3" fill="#fff" stroke="none"/>
+
+        <!-- 눈썹 -->
+        <path d="M166 162 Q176 156 186 160" stroke-width="2.5" fill="none"/>
+        <path d="M196 160 Q206 156 216 162" stroke-width="2.5" fill="none"/>
+
+        <!-- 코 (작게) -->
+        <path d="M187 192 Q191 197 195 192" stroke-width="2" fill="none"/>
+
+        <!-- 미소 -->
+        <path d="M178 204 Q191 215 204 204" stroke-width="2.5" fill="none"/>
+
+        <!-- 볼터치 -->
+        <ellipse cx="160" cy="192" rx="12" ry="7" fill="#f0c0aa" stroke="none" opacity="0.45"/>
+        <ellipse cx="222" cy="192" rx="12" ry="7" fill="#f0c0aa" stroke="none" opacity="0.45"/>
+
+        <!-- 목 -->
+        <line x1="181" y1="223" x2="178" y2="249" stroke-width="2.5"/>
+        <line x1="201" y1="223" x2="204" y2="249" stroke-width="2.5"/>
+
+        <!-- 몸통 -->
+        <path d="M155 260 Q148 257 146 310 L148 364 Q191 376 236 364 L238 310 Q238 257 228 260 Q218 252 205 254 L191 262 L177 254 Q163 252 155 260 Z" fill="#f5f5f3" stroke="#111" stroke-width="2.5"/>
+
+        <!-- 칼라 V넥 -->
+        <path d="M156 262 Q169 255 179 260 L191 274 L203 260 Q213 255 227 262" stroke-width="2" fill="none"/>
+
+        <!-- 왼쪽 팔 -->
+        <path d="M149 274 Q130 308 128 348" stroke-width="2.5" fill="none"/>
+        <ellipse cx="128" cy="358" rx="13" ry="10" fill="#fff" stroke-width="2"/>
+
+        <!-- 오른쪽 팔 -->
+        <path d="M240 274 Q258 308 260 348" stroke-width="2.5" fill="none"/>
+        <ellipse cx="260" cy="358" rx="13" ry="10" fill="#fff" stroke-width="2"/>
+
+        <!-- 노트북 화면 -->
+        <rect x="132" y="350" width="130" height="86" rx="7" fill="#f5f5f3" stroke-width="2.5"/>
+        <rect x="139" y="357" width="116" height="72" rx="3" fill="#fff" stroke="#ccc" stroke-width="1.5"/>
+
+        <!-- 화면 상단 바 -->
+        <rect x="142" y="360" width="110" height="11" rx="2" fill="#ebebeb" stroke="#ddd" stroke-width="1"/>
+        <circle cx="148" cy="365.5" r="2.5" fill="#d0d0d0" stroke="none"/>
+        <circle cx="155" cy="365.5" r="2.5" fill="#d0d0d0" stroke="none"/>
+        <circle cx="162" cy="365.5" r="2.5" fill="#d0d0d0" stroke="none"/>
+
+        <!-- 화면 이미지 블록 -->
+        <rect x="143" y="375" width="52" height="36" rx="2" fill="#e0dede" stroke="#ccc" stroke-width="1.5"/>
+        <path d="M147 407 L154 392 L161 399 L168 387 L176 407 Z" fill="#c5c3c1" stroke="#b0aeac" stroke-width="1"/>
+
+        <!-- 화면 텍스트 줄 -->
+        <line x1="200" y1="377" x2="246" y2="377" stroke="#bbb" stroke-width="2.5"/>
+        <line x1="200" y1="385" x2="242" y2="385" stroke="#bbb" stroke-width="2.5"/>
+        <line x1="200" y1="393" x2="246" y2="393" stroke="#bbb" stroke-width="2.5"/>
+        <line x1="200" y1="401" x2="234" y2="401" stroke="#bbb" stroke-width="2.5"/>
+
+        <!-- 화면 푸터 바 -->
+        <rect x="143" y="414" width="108" height="8" rx="2" fill="#f0eeec" stroke="#ddd" stroke-width="1"/>
+
+        <!-- 커서 -->
+        <line x1="210" y1="372" x2="210" y2="383" stroke="#666" stroke-width="2"/>
+
+        <!-- 키보드 베이스 -->
+        <path d="M124 436 Q197 447 270 436" stroke-width="2"/>
+        <rect x="178" y="436" width="40" height="8" rx="3" fill="#f5f5f3" stroke-width="1.5"/>
+
+      </svg>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="img/증명사진.png" alt="프로필 사진">
+      </div>
+      <div>
+        <h2>디자인으로<br>이야기를 전합니다.</h2>
+        <p>5년간 스타트업부터 대형 브랜드까지 다양한 프로젝트를 경험하며 브랜딩, UI/UX, 그래픽 디자인 분야에서 활동해왔습니다. 클라이언트의 목표를 깊이 이해하고 그것을 시각 언어로 풀어내는 것이 저의 작업 방식입니다.</p>
+      </div>
+      <div>
+        <p class="about-desc">단순히 '예쁜' 디자인을 넘어, 목적에 맞고 사용자가 직관적으로 이해할 수 있는 디자인을 추구합니다. 모든 픽셀에는 이유가 있어야 한다고 믿습니다.</p>
+        <div class="tools">
+          <div class="tools-label">주요 툴</div>
+          <div class="tool-tags">
+            <span class="tool-tag">Figma</span>
+            <span class="tool-tag">Illustrator</span>
+            <span class="tool-tag">Photoshop</span>
+            <span class="tool-tag">After Effects</span>
+            <span class="tool-tag">Framer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-light">
+    <div class="section-inner">
+      <div class="section-label">Services</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">◈</div>
+          <h3>브랜드 아이덴티티</h3>
+          <p>로고, 컬러 시스템, 타이포그래피 등 브랜드의 핵심 시각 요소를 설계합니다.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⬡</div>
+          <h3>UI/UX 디자인</h3>
+          <p>사용자 리서치부터 와이어프레임, 프로토타입까지 전 과정을 담당합니다.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">◻</div>
+          <h3>그래픽 디자인</h3>
+          <p>인쇄물, 디지털 콘텐츠, 패키지 디자인 등 다양한 매체를 다룹니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-label">Selected Work</div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item tall">
+        <div class="portfolio-thumb p1"><span>PROJECT 01</span></div>
+        <div class="portfolio-overlay">
+          <h4>Bloom — 브랜드 리뉴얼</h4>
+          <p>Brand Identity · 2024</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-thumb p2"><span>PROJECT 02</span></div>
+        <div class="portfolio-overlay">
+          <h4>Nova App — UI/UX</h4>
+          <p>Mobile Design · 2024</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-thumb p3"><span>PROJECT 03</span></div>
+        <div class="portfolio-overlay">
+          <h4>Arkive — 패키지 디자인</h4>
+          <p>Packaging · 2023</p>
+        </div>
+      </div>
+      <div class="portfolio-item wide">
+        <div class="portfolio-thumb p4"><span>PROJECT 04</span></div>
+        <div class="portfolio-overlay">
+          <h4>Stride — 웹 리디자인</h4>
+          <p>Web Design · 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <h2>함께 만들어봐요.</h2>
+      <p>새로운 프로젝트나 협업 아이디어가 있으시다면 언제든 연락 주세요.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:hello@yunakim.kr">✉ 이메일</a>
+        <a class="contact-link" href="#">Behance</a>
+        <a class="contact-link" href="#">Instagram</a>
+        <a class="contact-link" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2024 Yuna Kim. All rights reserved.</span>
+    <span>Seoul, Korea</span>
+  </footer>
+
+</body>
+</html>
